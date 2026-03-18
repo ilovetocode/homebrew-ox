@@ -5,21 +5,21 @@ class Ox < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ilovetocode/homebrew-ox/releases/download/v0.1.2/ox-v0.1.2-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "08b39e4380c8d077e7971e3fc34b2db6668e3368a66363acd5eb2bfa960eb3b2"
+      url "https://github.com/ilovetocode/homebrew-ox/releases/download/v0.1.6/ox-v0.1.6-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "e942f7af6d9be4b19ac9143b96bf2cfa46fd8231e556227cfcdf0c61bade3396"
     else
-      url "https://github.com/ilovetocode/homebrew-ox/releases/download/v0.1.2/ox-v0.1.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "24214b73ab17da72b800075ab95d325993c9414d05f38600e040936432a2e314"
+      url "https://github.com/ilovetocode/homebrew-ox/releases/download/v0.1.6/ox-v0.1.6-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ece8b371a4208613e7bda303db1a0b86202b54d4e746a190b0442338d07cab15"
     end
   end
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ilovetocode/homebrew-ox/releases/download/v0.1.2/ox-v0.1.2-aarch64-apple-darwin.tar.gz"
-      sha256 "261ca11423e823e44396107f15bd99f5a99eae1fd39718c75e72a76cd63cf7bc"
+      url "https://github.com/ilovetocode/homebrew-ox/releases/download/v0.1.6/ox-v0.1.6-aarch64-apple-darwin.tar.gz"
+      sha256 "aa9698142770603af08628cd6f0de7dc600d65f0fd9491f91c77e5f3e163be48"
     else
-      url "https://github.com/ilovetocode/homebrew-ox/releases/download/v0.1.2/ox-v0.1.2-x86_64-apple-darwin.tar.gz"
-      sha256 "f7865a01ec3ddfd93979acd1eabb415f3b14b17639a480a8cc1590fccb362d59"
+      url "https://github.com/ilovetocode/homebrew-ox/releases/download/v0.1.6/ox-v0.1.6-x86_64-apple-darwin.tar.gz"
+      sha256 "65640395b2f55741a37c2a42f10a1f0bc96c1664e17409047863638ebfdb3e45"
     end
   end
 
