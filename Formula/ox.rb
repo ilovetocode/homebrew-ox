@@ -7,11 +7,11 @@ class Ox < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ilovetocode/ox/releases/download/v0.1.9/ox-v0.1.9-aarch64-apple-darwin.tar.gz"
-      sha256 "254c50ccb9610567e9493df2c18ce102ac0358d04fadfcc9efac9602af75702b"
+      url "https://github.com/ilovetocode/ox/releases/download/v0.1.16/ox-v0.1.16-aarch64-apple-darwin.tar.gz"
+      sha256 "a18c69c80b2a377d843432e69c649222db4e1e943b7fb8d78ddaf7d27135fa3e"
     else
-      url "https://github.com/ilovetocode/ox/releases/download/v0.1.9/ox-v0.1.9-x86_64-apple-darwin.tar.gz"
-      sha256 "e77564d90e49dea8403da2692fcb539f4e45e53ae4c5c0f34c25733e246e919b"
+      url "https://github.com/ilovetocode/ox/releases/download/v0.1.16/ox-v0.1.16-x86_64-apple-darwin.tar.gz"
+      sha256 "ca763e2fcc633fec2f7617ebdc86aa5f459609a1e1b8d3aedfd186324eb07c13"
     end
   end
 
@@ -20,6 +20,6 @@ class Ox < Formula
   end
 
   test do
-    assert_match "ox 0.1.9", shell_output("#{bin}/ox --version")
+    assert_match "ox 0.1.16", shell_output("#{bin}/ox --version")
   end
 end
