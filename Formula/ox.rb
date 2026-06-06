@@ -19,10 +19,10 @@ end
 class Ox < Formula
   desc "Tmux-first CLI for managing agent sessions"
   homepage "https://github.com/ilovetocode/ox"
-  url "https://api.github.com/repos/ilovetocode/ox/releases/assets/440174394",
+  url "https://api.github.com/repos/ilovetocode/ox/releases/assets/440218600",
       using: GitHubPrivateReleaseAssetDownloadStrategy
-  version "0.1.54"
-  sha256 "d67def53fbe256a66792179da478af5a1bf096df8e294a757e9c92208f9790e2"
+  version "0.1.55"
+  sha256 "6070ebbddce95acfd27b943db8e1e7f701fb0a3cd6686b29f768e723c2bc8e8a"
   license :cannot_represent
 
   depends_on arch: :arm64
@@ -33,6 +33,6 @@ class Ox < Formula
   end
 
   test do
-    assert_match "ox 0.1.54", shell_output("#{bin}/ox --version")
+    assert_match "ox 0.1.55", shell_output("#{bin}/ox --version")
   end
 end
