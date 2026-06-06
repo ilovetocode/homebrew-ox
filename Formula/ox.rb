@@ -19,20 +19,20 @@ end
 class Ox < Formula
   desc "Tmux-first CLI for managing agent sessions"
   homepage "https://github.com/ilovetocode/ox"
-  version "0.1.51"
+  version "0.1.52"
   license :cannot_represent
 
   depends_on "tmux"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://api.github.com/repos/ilovetocode/ox/releases/assets/440111855",
+      url "https://api.github.com/repos/ilovetocode/ox/releases/assets/440120697",
           using: GitHubPrivateReleaseAssetDownloadStrategy
-      sha256 "cc05dca15fbf63c70747d2f63a2be5662a468305cc0861b2a0b8d5f3c7f7cabe"
+      sha256 "78735780128f43026399f2cde133a68f27c04a776c3ceb2e0a66da251618dfef"
     else
-      url "https://api.github.com/repos/ilovetocode/ox/releases/assets/440111858",
+      url "https://api.github.com/repos/ilovetocode/ox/releases/assets/440120699",
           using: GitHubPrivateReleaseAssetDownloadStrategy
-      sha256 "08b6e8603c9120c41bc58a1a6eae632cbb4b34fd7f3479b466216b784a5d4255"
+      sha256 "c9147aa4bb1d7876c5c667581f79aa381ea95c3cfea2f3a93802ef549fad8bf9"
     end
   end
 
@@ -41,6 +41,6 @@ class Ox < Formula
   end
 
   test do
-    assert_match "ox 0.1.51", shell_output("#{bin}/ox --version")
+    assert_match "ox 0.1.52", shell_output("#{bin}/ox --version")
   end
 end
